@@ -48,7 +48,7 @@ function Tweet({ buzz }: Props) {
       profileImg: session?.user?.image || 'https://links.papareact.com/gll',
     }
 
-    const result = await fetch(`/api/addComment`, {
+    const result = await fetch(`/api/auth/addComment`, {
       body: JSON.stringify(comment),
       method: 'POST',
     })
