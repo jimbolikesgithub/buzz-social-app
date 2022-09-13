@@ -3,7 +3,7 @@
 // Coming back from sanity
 export interface Buzz extends BuzzBody {
     _id: string
-    _createdAt: number
+    _createdAt: string
     _updatedAt: string
     _rev: string
     _type: 'buzz'
