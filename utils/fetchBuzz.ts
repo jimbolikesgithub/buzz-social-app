@@ -9,4 +9,4 @@ export const fetchBuzz = async () => {
     const buzz: Buzz[] = data.buzz;
 
     return buzz
-}
+}  
