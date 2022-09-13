@@ -38,12 +38,12 @@ export default async function handler(
       // Sending in authentication request
       Authorization: `Bearer ${process.env.SANITY_API_TOKEN}`
     },
-    body: JSON.stringify(mutations),
+    // body: JSON.stringify(mutations),
     method: 'POST',
   })
 
-  const json = await result.json()
-  console.log(json)
+  // const json = await result.json()
+  // console.log(json)
 
-  res.status(200).json({ message: 'Done!' })
+  // res.status(200).json({ message: 'Done!' })
 }
