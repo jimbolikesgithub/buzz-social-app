@@ -21,7 +21,7 @@ interface Props {
 }
 
 const Home = ({ buzz }: Props) => {
-  // console.log(buzz)
+  console.log(buzz)
 
   return (
     <div className="lg:max-w-6xl mx-auto max-h-screen overflow-hidden">
@@ -58,3 +58,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     }
   }
 }
+
+// How to run sanity: 
+// 1. cd into sanity folder
+// 2. type `sanity start`
