@@ -1,0 +1,3 @@
+export const fetchComments = async (buzzId: string) => {
+    // Make call to backend to handle
+}
