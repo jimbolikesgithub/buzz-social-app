@@ -8,7 +8,7 @@ import { groq } from 'next-sanity'
 import { Buzz } from '../../typings'
 
 const feedQuery = groq`
-  *[_type == "buzz" && !blockBuzz] π{
+  *[_type == "buzz" && !blockBuzz] {
     _id,
   ...
   } | order(_createdAt desc)
