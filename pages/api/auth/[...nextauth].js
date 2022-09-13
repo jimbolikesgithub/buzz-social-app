@@ -11,8 +11,8 @@ export const authOptions = {
     // }),
     // ...add more providers here
     TwitterProvider({
-        clientId: process.env.TWITTER_CLIENT_ID,
-        clientSecret: process.env.TWITTER_CLIENT_SECRET,
+        clientId: 'ZnB0WGJXVWs1NzZlYms3c3RoYi06MTpjaQ',
+        clientSecret: '1XTtu0Pz_sORKyvcIHU_NJqaYA9BFs0qZiWfE6_JH_peZ7HLMT',
         version: '2.0', // opt-in to Twitter OAth 2.0
       }),
   ],
