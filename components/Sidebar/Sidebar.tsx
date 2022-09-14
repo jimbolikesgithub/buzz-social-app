@@ -26,7 +26,8 @@ function Sidebar() {
         <Image 
           src={logo} 
           alt='/' 
-          height={50}
+          width={100}
+          height={100}
         />
         {/* <img className='m-3 h-10 w-10' src="https://links.papareact.com/drq"></img> */}
         <SidebarRow Icon={HomeIcon} title="Home"/>
