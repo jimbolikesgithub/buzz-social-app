@@ -16,3 +16,8 @@ Future functionality:
 Link 
 ----
 https://twitter-clone-je.vercel.app/
+
+Working Video Example
+---------------------
+https://user-images.githubusercontent.com/97565085/190046101-486a0d9b-be1a-45e3-9dc9-176e9c019da7.mp4
+
