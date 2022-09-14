@@ -52,7 +52,7 @@ function BuzzBox({ setBuzz }: Props ) {
     }
 
     // Post req (mutates buzz)
-    const result = await fetch(`/api/addBuzz`, {
+    const result = await fetch(`api/addBuzz`, {
       body: JSON.stringify(buzzInfo),
       method: 'POST', 
     })
