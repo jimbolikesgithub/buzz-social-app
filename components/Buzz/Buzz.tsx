@@ -22,6 +22,7 @@ interface Props {
 function Tweet({ buzz }: Props) {
   const [commentBoxVisible, setCommentBoxVisible] = useState<boolean>(false)
   const [input, setInput] = useState<string>('')
+  // `<Comment[]>` === hard enforce
   const [comments, setComments] = useState<Comment[]>([])
 
   const { data: session } = useSession()
@@ -34,6 +35,8 @@ function Tweet({ buzz }: Props) {
   useEffect(() => {
     refreshComments()
   }, [])
+
+  console.log(comments)
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
