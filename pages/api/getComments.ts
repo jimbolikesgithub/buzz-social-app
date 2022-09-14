@@ -6,6 +6,7 @@ import { groq } from 'next-sanity'
 import { sanityClient } from '../../sanity';
 import { Comment } from '../../typings';
 
+// `$buzzId`, in groq, is known as a 'placeholder'
 const commentQuery = groq`
 *[_type == "comment" && references(*[_type== 'buzz' && _id == $buzzId]._id)] {
   _id,
@@ -26,7 +27,7 @@ export default async function handler(
     buzzId
   })
 
-  // console.log("Comments >>>", comments)
+  console.log("Comments >>>", comments)
 
   res.status(200).json(comments)
 }
